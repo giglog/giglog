@@ -1,0 +1,8 @@
+docker-compose run web rake db:create
+
+docker-compose run web rails g model Post title:string tags:integer lbook_id:integer likes_count:integer published_at:date last_modified_at:date
+
+docker-compose run web rails g model Book title:string summary:string published_at:date
+
+
+docker-compose run web rake db:migrate

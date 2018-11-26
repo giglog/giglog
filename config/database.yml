@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: 5
+  username: root
+  # password: <%= ENV['MYSQL_ROOT_PASSWORD'] %>
+  password: root
+  host: db
+
+development:
+  <<: *default
+  database: giglog_development
+
+test:
+  <<: *default
+  database: giglog_test
+
+production:
+  <<: *default
+  database: giglog_production
+  username: giglog
+  password: <%= ENV['GIGLOG_DATABASE_PASSWORD'] %>
