@@ -7,7 +7,7 @@ Things you may want to cover:
 
 # version
 ```
-ruby  2.4.2
+ruby  2.5.3
 rails 5.1.2
 mysql 5.7
 yarn  1.6.0
